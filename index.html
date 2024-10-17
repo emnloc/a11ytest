@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A11y Test</title>
+
+    <style>
+      .screenReadersOnly {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+
+    <ul>
+      <li>
+        <div>
+          <span class="screenReadersOnly"
+            >List item 1 Detail text example 1 Meta 1</span
+          >
+          <div aria-hidden="true">
+            <div>
+              <div>List item 1</div>
+            </div>
+            <div>Detail text example 1</div>
+          </div>
+          <div aria-hidden="true">
+            <span>Meta 1</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <span class="screenReadersOnly"
+            >List item 2 Detail text example 2 Meta 2</span
+          >
+          <div aria-hidden="true">
+            <div>
+              <div>List item 2</div>
+            </div>
+            <div>Detail text example 2</div>
+          </div>
+          <div aria-hidden="true">
+            <span>Meta 2</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <span class="screenReadersOnly"
+            >List item 3 Detail text example 3 Meta 3</span
+          >
+          <div aria-hidden="true">
+            <div>
+              <div>List item 3</div>
+            </div>
+            <div>Detail text example 3</div>
+          </div>
+          <div aria-hidden="true">
+            <span>Meta 3</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h1>ARIA</h1>
+
+    <p aria-label="Summary" aria-details="d1">This is a P labeled</p>
+    <div id="d1">Details of the paragraph</div>
+
+
+    <h2>list made of divs</h2>
+    <div role="list">
+        <div role="listitem" aria-label="Content for readers 1">div list 1</div>
+        <div role="listitem" aria-label="Content for readers 1">div list 2</div>
+        <div role="listitem" aria-label="Content for readers 1">div list 3</div>
+    </div>
+
+    <h2>ListItem component</h2>
+    <ul>
+      <li aria-label="Custom content 1" aria-describedby="l1" role="listitem">
+        <div>
+          <div>
+            <div>
+              <div>List item 1</div>
+            </div>
+            <div id="l1">Detail text example 1</div>
+          </div>
+          <div>
+            <span>Meta 1</span>
+          </div>
+        </div>
+      </li>
+      <li aria-label="Custom content 2" aria-describedby="l2">
+        <div>
+          <div>
+            <div>
+              <div>List item 2</div>
+            </div>
+            <div id="l2">Detail text example 2</div>
+          </div>
+          <div>
+            <span>Meta 2</span>
+          </div>
+        </div>
+      </li>
+      <li aria-label="Custom content 3" aria-describedby="l3">
+        <div>
+          <div>
+            <div>
+              <div id="l3">List item 3</div>
+            </div>
+            <div>Detail text example 3</div>
+          </div>
+          <div>
+            <span>Meta 3</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h2>textarea</h2>
+    <div>
+      <div>
+        <div>
+          <div >
+            <label for="textarea-fullwidth2">Smaller text area</label>
+            <div
+              aria-labelledby="char-limit-label"
+              aria-hidden="true"
+            >
+              <span>0/100</span>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div>
+          <span>
+            <textarea
+              aria-readonly="false"
+              aria-describedby="textarea-fullwidth2-description"
+              aria-invalid="false"
+              id="textarea-fullwidth2"
+              rows="4"
+              cols="35"
+              maxlength="100"
+              placeholder=""
+            ></textarea>
+          </span>
+        </div>
+      </div>
+      <span data-testid="char-limit-label" class="screenReadersOnly">Characters entered 0 of 100.</span
+      >
+    </div>
+  </body>
+</html>
