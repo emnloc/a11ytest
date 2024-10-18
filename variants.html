@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Example</title>
+    <style>
+      .wrapper {
+        display: flex;
+      }
+      section {
+        width: 50%;
+      }
+
+      @media (max-width: 768px) {
+        .wrapper {
+          flex-direction: column;
+        }
+        section {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <h2>As Menu</h2>
+
+        <ul role="menu">
+          <li
+            role="menuitem"
+            aria-label="Custom menu content 1"
+            aria-describedby="m1"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu item 1</div>
+                <div id="m1">Menu text example 1</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 1</span>
+              </div>
+            </div>
+          </li>
+
+          <li
+            role="menuitem"
+            aria-label="Custom menu content 2"
+            aria-describedby="m2"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu item 2</div>
+                <div id="m2">Menu text example 2</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 2</span>
+              </div>
+            </div>
+          </li>
+          <li
+            role="menuitem"
+            aria-label="Custom menu content 3"
+            aria-describedby="m3"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu item 3</div>
+                <div id="m3">Menu text example 3</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 3</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <pre aria-hidden="true">
+&lt;ul role="menu">
+    &lt;li
+        role="menuitem"
+        aria-label="Custom menu content 1"
+        aria-describedby="m1"
+    >
+    &lt;div>
+        &lt;div aria-hidden="true">
+          &lt;div>Menu item 1&lt;/div>
+          &lt;div id="m1">Menu text example 1&lt;/div>
+        &lt;/div>
+        &lt;div aria-hidden="true">
+          &lt;span>Meta 1&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;/li>
+&lt;/ul>
+        </pre>
+      </section>
+      <section>
+        <h2>As Listbox</h2>
+        <ul role="listbox">
+          <li
+            role="option"
+            aria-label="Custom option content 1"
+            aria-describedby="o1"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Option item 1</div>
+                <div id="o1">Option text example 1</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 1</span>
+              </div>
+            </div>
+          </li>
+
+          <li
+            role="option"
+            aria-label="Custom option content 2"
+            aria-describedby="o2"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Option item 2</div>
+                <div id="o2">Option text example 2</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 2</span>
+              </div>
+            </div>
+          </li>
+          <li
+            role="option"
+            aria-label="Custom option content 3"
+            aria-describedby="o3"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Option item 3</div>
+                <div id="o3">Option text example 3</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 3</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <pre aria-hidden="true">
+&lt;ul role="listbox">
+    &lt;li
+        role="option"
+        aria-label="Custom option content 1"
+        aria-describedby="o1"
+    >
+    &lt;div>
+        &lt;div aria-hidden="true">
+          &lt;div>Menu item 1&lt;/div>
+          &lt;div id="o1">Option text example 1&lt;/div>
+        &lt;/div>
+        &lt;div aria-hidden="true">
+          &lt;span>Meta 1&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;/li>
+&lt;/ul>
+        </pre>
+      </section>
+    </div>
+  </body>
+</html>
