@@ -25,7 +25,7 @@
   <body>
     <div class="wrapper">
       <section>
-        <h2>As Menu</h2>
+        <h2>As Menu - menuitem elements</h2>
 
         <ul role="menu">
           <li
@@ -98,7 +98,7 @@
       </section>
       <section>
         <h2>As Listbox</h2>
-        <ul role="listbox">
+        <ul role="listbox" aria-expanded="true">
           <li
             role="option"
             aria-label="Custom option content 1"
@@ -157,6 +157,152 @@
         &lt;div aria-hidden="true">
           &lt;div>Menu item 1&lt;/div>
           &lt;div id="o1">Option text example 1&lt;/div>
+        &lt;/div>
+        &lt;div aria-hidden="true">
+          &lt;span>Meta 1&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;/li>
+&lt;/ul>
+        </pre>
+      </section>
+
+      <section>
+        <h2>As Menu - menuitemcheckbox</h2>
+
+        <ul role="menu">
+          <li
+            role="menuitemcheckbox"
+            aria-label="Custom menu cb content 1"
+            aria-describedby="mc1"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu cb item 1</div>
+                <div id="mc1">Menu cb text example 1</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 1</span>
+              </div>
+            </div>
+          </li>
+
+          <li
+            role="menuitemcheckbox"
+            aria-label="Custom menu cb content 2"
+            aria-describedby="mc2"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu cb item 2</div>
+                <div id="mc2">Menu text example 2</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 2</span>
+              </div>
+            </div>
+          </li>
+          <li
+            role="menuitemcheckbox"
+            aria-label="Custom menu cb content 3"
+            aria-describedby="mc3"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu cb item 3</div>
+                <div id="mc3">Menu text example 3</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 3</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <pre aria-hidden="true">
+&lt;ul role="menu">
+    &lt;li
+        role="menuitemcheckbox"
+        aria-label="Custom menu cb content 1"
+        aria-describedby="mc1"
+    >
+    &lt;div>
+        &lt;div aria-hidden="true">
+          &lt;div>Menu cb item 1&lt;/div>
+          &lt;div id="mc1">Menu text example 1&lt;/div>
+        &lt;/div>
+        &lt;div aria-hidden="true">
+          &lt;span>Meta 1&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;/li>
+&lt;/ul>
+        </pre>
+      </section>
+
+      <section>
+        <h2>As Menu - menuitemradio</h2>
+
+        <ul role="menu">
+          <li
+            role="menuitemradio"
+            aria-label="Custom menu radio content 1"
+            aria-describedby="mr1"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu radio item 1</div>
+                <div id="mr1">Menu cb text example 1</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 1</span>
+              </div>
+            </div>
+          </li>
+
+          <li
+            role="menuitemradio"
+            aria-label="Custom menu radio content 2"
+            aria-describedby="mr2"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu radio item 2</div>
+                <div id="mr2">Menu text example 2</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 2</span>
+              </div>
+            </div>
+          </li>
+          <li
+            role="menuitemradio"
+            aria-label="Custom menu radio content 3"
+            aria-describedby="mr3"
+          >
+            <div>
+              <div aria-hidden="true">
+                <div>Menu radio item 3</div>
+                <div id="mr3">Menu text example 3</div>
+              </div>
+              <div aria-hidden="true">
+                <span>Meta 3</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <pre aria-hidden="true">
+&lt;ul role="menu">
+    &lt;li
+        role="menuitemradio"
+        aria-label="Custom menu radio content 1"
+        aria-describedby="mr1"
+    >
+    &lt;div>
+        &lt;div aria-hidden="true">
+          &lt;div>Menu radio item 1&lt;/div>
+          &lt;div id="mr1">Menu text example 1&lt;/div>
         &lt;/div>
         &lt;div aria-hidden="true">
           &lt;span>Meta 1&lt;/span>
