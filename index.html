@@ -71,26 +71,26 @@
 
     <h1>ARIA</h1>
 
-    <p aria-details="d1">This is a P labeled</p>
+    <p aria-label="Summary" aria-details="d1">This is a P labeled</p>
     <div id="d1">Details of the paragraph</div>
 
 
     <h2>list made of divs</h2>
-    <div role="listbox">
-        <div role="option" aria-label="Content for readers 1" aria-describedby="description1">div list 1
+    <div role="list">
+        <div role="listitem" aria-label="Content for readers 1" aria-describedby="description1">div list 1
             <span id="description1">Custom description 1</span>
         </div>
-        <div role="option" aria-label="Content for readers 2" aria-describedby="description1">div list 2
+        <div role="listitem" aria-label="Content for readers 2" aria-describedby="description1">div list 2
             <span id="description2">Custom description 1</span>
         </div>
-        <div role="option" aria-label="Content for readers 3" aria-describedby="description1">div list 3
+        <div role="listitem" aria-label="Content for readers 3" aria-describedby="description1">div list 3
             <span id="description3">Custom description 1</span>
         </div>
     </div>
 
     <h2>ListItem component</h2>
-    <ul role="listbox">
-      <li role="option" aria-label="Custom content 1" aria-describedby="l1" role="listitem">
+    <ul role="menu">
+      <li role="menuitem" aria-label="Custom content 1" aria-describedby="l1" role="listitem">
         <div>
           <div>
             <div>
@@ -103,7 +103,7 @@
           </div>
         </div>
       </li>
-      <li role="option" aria-label="Custom content 2" aria-describedby="l2">
+      <li role="menuitem" aria-label="Custom content 2" aria-describedby="l2">
         <div>
           <div>
             <div>
@@ -116,7 +116,7 @@
           </div>
         </div>
       </li>
-      <li role="option" aria-label="Custom content 3" aria-describedby="l3">
+      <li role="menuitem" aria-label="Custom content 3" aria-describedby="l3">
         <div>
           <div>
             <div>
