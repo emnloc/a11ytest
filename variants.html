@@ -7,9 +7,14 @@
     <style>
       .wrapper {
         display: flex;
+        flex-wrap: wrap;
       }
       section {
-        width: 50%;
+        width: 33%;
+      }
+
+      li {
+        list-style: none;
       }
 
       @media (max-width: 768px) {
@@ -305,6 +310,63 @@
           &lt;div id="mr1">Menu text example 1&lt;/div>
         &lt;/div>
         &lt;div aria-hidden="true">
+          &lt;span>Meta 1&lt;/span>
+        &lt;/div>
+    &lt;/div>
+    &lt;/li>
+&lt;/ul>
+        </pre>
+      </section>
+      <section>
+        <h2>As Default list</h2>
+
+        <ul>
+          <li>
+            <div aria-label="Custom content" aria-describedby="dt1">
+              <div aria-hidden="true">
+                <div>Menu list item 1</div>
+                <div id="dt1">Menu list text example 1</div>
+              </div>
+              <div>
+                <span>Meta 1</span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div>
+                <div>Menu list item 2</div>
+                <div>Menu list text example 2</div>
+              </div>
+              <div>
+                <span>Meta 2</span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div>
+                <div>Menu list item 3</div>
+                <div>Menu list text example 3</div>
+              </div>
+              <div>
+                <span>Meta 3</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <pre aria-hidden="true">
+&lt;ul>
+    &lt;li>
+    &lt;div>
+        &lt;div>
+          &lt;div>Menu list item 1&lt;/div>
+          &lt;div>Menu list text example 1&lt;/div>
+        &lt;/div>
+        &lt;div>
           &lt;span>Meta 1&lt;/span>
         &lt;/div>
     &lt;/div>
